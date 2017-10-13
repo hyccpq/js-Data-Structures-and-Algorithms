@@ -1,8 +1,8 @@
 // // ES6
 // const items = new WeakMap();
 // class Stack{
-//     constructor(){
-//         items.set(this,[]);
+//     constructor(arr){
+//         items.set(this,arr);
 //     }
 //     push(element){
 //         let s = items.get(this);
