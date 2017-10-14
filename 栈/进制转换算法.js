@@ -1,24 +1,24 @@
 // // ES6
-// const items = new WeakMap();
-// class Stack{
-//     constructor(arr){
-//         items.set(this,arr);
-//     }
-//     push(element){
-//         let s = items.get(this);
-//         s.push(element);
-//         return s;
-//     }
-//     pop(){
-//         let s = items.get(this);
-//         let r = s.pop();
-//         return r;
-//     }
-//     isEmpty(){
-//         let s = items.get(this);
-//         return s.length === 0;
-//     }
-// }
+const items = new WeakMap();
+class Stack{
+    constructor(arr){
+        items.set(this,arr);
+    }
+    push(element){
+        let s = items.get(this);
+        s.push(element);
+        return s;
+    }
+    pop(){
+        let s = items.get(this);
+        let r = s.pop();
+        return r;
+    }
+    isEmpty(){
+        let s = items.get(this);
+        return s.length === 0;
+    }
+}
 // ES5~
 function Stack(arr) {
     this.items = arr;
@@ -32,6 +32,7 @@ Stack.prototype.pop = function () {
 Stack.prototype.isEmpty = function () {
     return this.items.length === 0;
 };
+
 
 
 function baseConverter(decNumber,base) {
