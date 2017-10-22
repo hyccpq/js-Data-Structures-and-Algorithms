@@ -1,4 +1,4 @@
-// // ES6
+// ES6
 const items = new WeakMap();
 class Stack{
     constructor(arr){
@@ -19,19 +19,19 @@ class Stack{
         return s.length === 0;
     }
 }
-// ES5~
-function Stack(arr) {
-    this.items = arr;
-}
-Stack.prototype.push = function (element){
-    this.items.push(element);
-};
-Stack.prototype.pop = function () {
-    return this.items.pop();
-};
-Stack.prototype.isEmpty = function () {
-    return this.items.length === 0;
-};
+// // ES5~
+// function Stack(arr) {
+//     this.items = arr;
+// }
+// Stack.prototype.push = function (element){
+//     this.items.push(element);
+// };
+// Stack.prototype.pop = function () {
+//     return this.items.pop();
+// };
+// Stack.prototype.isEmpty = function () {
+//     return this.items.length === 0;
+// };
 
 
 
