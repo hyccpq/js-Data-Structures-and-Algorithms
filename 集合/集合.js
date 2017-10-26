@@ -73,13 +73,15 @@ class Set {
 
         let values = this.values();
         for(let i=0;i<values.length;i++) {
-            if (otherSet.has(values[i])) {
+            if (!otherSet.has(values[i])) {
                 differenceSet.add(values[i]);
             }
         }
 
         return differenceSet;
     }
+
+
 }
 
 let setA = new Set(),
@@ -93,3 +95,5 @@ setB.add(3);
 setB.add(4);
 let unionAB = setA.union(setB);
 console.log(unionAB.values());
+console.log(setA.difference(setB).values());
+console.log(setA.instersection(setB).values());
