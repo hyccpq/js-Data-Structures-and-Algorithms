@@ -28,6 +28,8 @@ class Set {
     }
 
     size(){
+        // return this.items.length;
+        console.log(Object.keys(this.items));
         return Object.keys(this.items).length;
     }
 
@@ -89,7 +91,8 @@ let setA = new Set(),
 setA.add(1);
 setA.add(2);
 setA.add(3);
-// console.log(setA);
+console.log(setA);
+console.log(setA.size());
 setB.add(2);
 setB.add(3);
 setB.add(4);
@@ -97,3 +100,4 @@ let unionAB = setA.union(setB);
 console.log(unionAB.values());
 console.log(setA.difference(setB).values());
 console.log(setA.instersection(setB).values());
+// console.log(satA.instersection(setB).size());
