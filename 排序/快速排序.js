@@ -1,4 +1,3 @@
-let date = new Date();
 let arr = [3,6,4,2,4,9,1,88,12,5]
 let quick = function (arr,left,right) {
 	let i = left,
@@ -7,7 +6,7 @@ let quick = function (arr,left,right) {
 	if(a > 1){
 		let index = arr[Math.floor((i+j)/2)];
 		// console.log(index);
-		while (i < j){//???<=而不是<
+		while (i <= j){//???<=而不是<
 			while (arr[i] < index){
 				i++;
 			}
@@ -29,10 +28,5 @@ let quick = function (arr,left,right) {
 		}
 	}
 }
-
-
 quick(arr,0,arr.length-1);
 console.log(arr);
-setTimeout(()=>{
-	console.info(new Date - date);
-},0)
